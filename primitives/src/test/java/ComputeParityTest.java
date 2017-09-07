@@ -7,7 +7,6 @@ public class ComputeParityTest {
     private short expected;
     private long n;
 
-
     @Test
     public void parity1() {
         expected = 0;
@@ -43,6 +42,4 @@ public class ComputeParityTest {
     private void test(short expected, long n) {
         assertEquals(expected, ComputeParity.parity(n));
     }
-
-
 }
