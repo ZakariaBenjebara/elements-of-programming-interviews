@@ -1,12 +1,14 @@
 import java.util.List;
 
-public class PermuteElements {
+import static java.util.stream.Collectors.toList;
+
+public final class PermuteElements {
 
     /*
     6.9
     */
 
-    public static void applyPermutation(List<Integer> perm, List<Integer> a) {
-
+    public static List<Integer> applyPermutation(List<Integer> perm, List<Integer> a) {
+        return perm.stream().map(a::get).collect(toList());
     }
 }

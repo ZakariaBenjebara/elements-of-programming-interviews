@@ -40,8 +40,7 @@ public class PermuteElementsTest {
     }
 
     private void test(List<Integer> expected, List<Integer> perm, List<Integer> a) {
-        PermuteElements.applyPermutation(perm, a);
-        assertEquals(expected, a);
+        assertEquals(expected, PermuteElements.applyPermutation(perm, a));
     }
 
 }
